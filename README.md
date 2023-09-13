@@ -61,10 +61,18 @@ The administration of a city would like to improve the efficiency of its wind fa
   - Path to S3 object: AnomalyDetection.jar. <br>
   - Access to application resources: Choose from IAM roles that Kinesis Data Analytics can assume. <br>
   - Service role: choose the IAM role you created earlier. <br>
-  - Under Runtime properties: click add item. <br>
-  - Group ID: project. <br>
-  - Key: inputStreamName. <br>
-  - Value: WindDataStream. <br>
+  - Under Runtime properties: click add item: <br>
+  * Group ID: project. <br>
+  * Key: inputStreamName. <br>
+  * Value: WindDataStream. <br>
+  - Add another item: <br>
+  * Group ID: project. <br>
+  * Key: ouputStreamName. <br>
+  * Value: AnomalyDetectionStream. <br>
+  - Add another item: <br>
+  * Group ID: project. <br>
+  * Key: region. <br>
+  * Value: us-east-a. <br>
 </details>
 
 <details>
