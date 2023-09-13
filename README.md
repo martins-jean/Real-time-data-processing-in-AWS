@@ -72,7 +72,8 @@ The administration of a city would like to improve the efficiency of its wind fa
   - Add another item: <br>
   * Group ID: project. <br>
   * Key: region. <br>
-  * Value: us-east-a. <br>
+  * Value: us-east-1. <br>
+  - Click run to start the application.
 </details>
 
 <details>
