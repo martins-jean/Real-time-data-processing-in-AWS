@@ -73,7 +73,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   * Group ID: project. <br>
   * Key: region. <br>
   * Value: us-east-1. <br>
-  - Click run to start the application with the latest snapshot.
+  - Click run to start the application with the latest snapshot. <br> <br>
 3. Return to the Wind Turbine Data Simulator and under "Wind Speed Data Set" click start and review to ensure data is being generated. <br>
 </details>
 
