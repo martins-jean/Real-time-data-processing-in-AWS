@@ -1,3 +1,3 @@
-# Real-Time Data Processing in AWS
+# REAL-TIME DATA PROCESSING IN AWS
 
 ## ARCHITECTURE DIAGRAM
