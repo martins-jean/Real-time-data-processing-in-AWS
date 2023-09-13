@@ -27,6 +27,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   <summary>
     Required setup
   </summary>
+  <br>
   1. Create a bucket in S3 for the Apache Flink application and use GitHub Desktop to upload the AnomalyDetection.jar file to it. <br>
   2. Create an EC2 instance called "Wind Turbine Simulator".
 </details>
@@ -35,6 +36,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   <summary>
     Deploy a Kinesis Data Stream to ingest streaming data from the wind speed sensors
   </summary>
+  <br>
   1. Navigate to S3 and inside your kinesis-flink bucket, copy the name of the anomaly detection .jar file and paste it in a text editor. <br>
   2. Navigate to the Amazon EC2 dashboard and click on instances (running) and copy the public IPv4 address of the EC2 instance you created earlier. <br>
   3. In a new browser tab, paste the address and add /kinesis to it at the end. This opens the wind turbine data simulator. <br>
