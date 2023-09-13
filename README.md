@@ -26,15 +26,16 @@ The administration of a city would like to improve the efficiency of its wind fa
 
 <details>
   <summary>
-    
+    Required setup
   </summary>
-  
+  1. Create a bucket in S3 for the Apache Flink application and upload the two .jar files to it.
 </details>
 
 <details>
   <summary>
     Deploy a Kinesis Data Stream to ingest streaming data from the wind speed sensors
   </summary>
+  1. Navigate to S3 and inside your kinesis-flink bucket, copy the name of the anomaly detection .jar file and paste it in a text editor. <br>
 </details>
 
 <details>
