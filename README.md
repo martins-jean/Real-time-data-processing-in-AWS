@@ -77,7 +77,7 @@ The administration of a city would like to improve the efficiency of its wind fa
 3. Return to the Wind Turbine Data Simulator and under "Wind Speed Data Set" click start and review to ensure data is being generated. <br>
 4. Click on the AnomalyDetectionStream on the Kinesis page. <br>
 5. Under data viewer, choose the only shard available, the latest starting position, get records and then next records to review the data. <br>
-6. Start the "Wind Speed Anomaly Data Set"
+6. Start the "Wind Speed Anomaly Data Set" and review to ensure the simulator is producing wind data.
 </details>
 
 <details>
