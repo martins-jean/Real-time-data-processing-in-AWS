@@ -28,7 +28,8 @@ The administration of a city would like to improve the efficiency of its wind fa
     Required setup
   </summary>
   1. Create a bucket in S3 for the Apache Flink application and use GitHub Desktop to upload the AnomalyDetection.jar file to it. <br>
-  2. Create an EC2 instance called "Wind Turbine Simulator".
+  2. Create an EC2 instance called "Wind Turbine Simulator". <br>
+  3. Create an IAM role for Kinesis Data Analytics.
 </details>
 
 <details>
@@ -53,6 +54,8 @@ The administration of a city would like to improve the efficiency of its wind fa
   1. On the Kinesis console, click Managed Apache Flink and then create a streaming application with the following configurations: <br> <br>
   - Name: AnomalyDetection. <br>
   - Access to application resources: Choose from IAM roles that Kinesis Data Analytics can assume. <br>
+  - Service role: choose the IAM role you created earlier. <br>
+  - Templates: Development. <br>
 </details>
 
 <details>
