@@ -43,7 +43,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   6. In the test data section, review that the data is being generated. <br>
   7. Return to the data stream page and click on the data viewer option. <br>
   8. Choose the only available shard, latest starting position and click get records. To view incoming data, click next records. If you don't see any records, wait for a few seconds and try again. <br>
-</summary>
+  9. Create another provisioned Data Stream named AnomalyDetectionStream. 
 </details>
 
 <details>
