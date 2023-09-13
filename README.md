@@ -25,7 +25,7 @@ The administration of a city would like to improve the efficiency of its wind fa
 
 <details>
   <summary>
-    **Required setup**
+    Required setup
   </summary>
   1. Create a bucket in S3 for the Apache Flink application and use GitHub Desktop to upload the AnomalyDetection.jar file to it. <br>
   2. Create an EC2 instance called "Wind Turbine Simulator". <br>
