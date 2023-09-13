@@ -19,7 +19,6 @@ The administration of a city would like to improve the efficiency of its wind fa
 4. To configure an external destination, we will use a Lambda function. The function code will then take the processed data and parse it into records in an Amazon DynamoDB table. The data includes the wind farm location, wind speed and the assigned anomaly score. <br> <br>
 5. To scan the DynamoDB table and filter for anomaly scores greater or equal to 2, we will use a second Lambda function. For each discovered anomaly, the function publishes a notification message to an SNS topic. <br> <br>
 6. Subscribers to the SNS topic receive a notification email each time an anomaly is identified so the maintenance can be alerted and dispatched as soon as possible to the affected wind farm. <br> <br>
-7. To further our analysis, we will create a new Kinesis Data Analytics application that will calculate the wind speed maximum for one of the wind farms.
 </p>
 
 ## Reproducibility guidelines
@@ -28,7 +27,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   <summary>
     Required setup
   </summary>
-  1. Create a bucket in S3 for the Apache Flink application and use GitHub Desktop to upload the two .jar files to it. <br>
+  1. Create a bucket in S3 for the Apache Flink application and use GitHub Desktop to upload the AnomalyDetection.jar file to it. <br>
   2. Create an EC2 instance called "Wind Turbine Simulator".
 </details>
 
@@ -55,11 +54,5 @@ The administration of a city would like to improve the efficiency of its wind fa
 <details>
   <summary>
     Use another Lambda function to filter the DynamoDB table for anomalies and publish them to an SNS topic
-  </summary>
-</details>
-
-<details>
-  <summary>
-    Discover further insights by creating a second Kinesis Data Analytics application
   </summary>
 </details>
