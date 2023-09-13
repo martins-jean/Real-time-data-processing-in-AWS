@@ -13,11 +13,11 @@ The administration of a city would like to improve the efficiency of its wind fa
 ## Project objectives
 
 <p align="justify">
-1. To collect and process large streams of wind speed sensor data in real-time, we will use Kinesis Data Streams. <br>
-2. To analyze the data, we will use Kinesis Data Analytics for Apache Flink which is used with either Java or Scala. <br>
-3. To perform anomaly detection, we will use the Random Cut Forest (RCF) algorithm. The process will assign an anomaly score to each record based on values in the numeric columns. A record is an anomaly if it is distant from other records. <br>
-4. To configure an external destination, we will use a Lambda function. The function code will then take the processed data and parse it into records in an Amazon DynamoDB table. The data includes the wind farm location, wind speed and the assigned anomaly score. <br>
-5. To scan the DynamoDB table and filter for anomaly scores greater or equal to 2, we will use a second Lambda function. For each discovered anomaly, the function publishes a notification message to an SNS topic. <br>
+1. To collect and process large streams of wind speed sensor data in real-time, we will use Kinesis Data Streams. <br> 
+2. To analyze the data, we will use Kinesis Data Analytics for Apache Flink which is used with either Java or Scala. <br> 
+3. To perform anomaly detection, we will use the Random Cut Forest (RCF) algorithm. The process will assign an anomaly score to each record based on values in the numeric columns. A record is an anomaly if it is distant from other records. <br> 
+4. To configure an external destination, we will use a Lambda function. The function code will then take the processed data and parse it into records in an Amazon DynamoDB table. The data includes the wind farm location, wind speed and the assigned anomaly score. <br> 
+5. To scan the DynamoDB table and filter for anomaly scores greater or equal to 2, we will use a second Lambda function. For each discovered anomaly, the function publishes a notification message to an SNS topic. <br> 
 6. Subscribers to the SNS topic receive a notification email each time an anomaly is identified so the maintenance can be alerted and dispatched as soon as possible to the affected wind farm. 
 </p>
 
