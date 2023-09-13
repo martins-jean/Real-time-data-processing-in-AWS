@@ -1,9 +1,9 @@
-# REAL-TIME DATA PROCESSING IN AWS
+# Real-time data processing in AWS
 
-## CONTEXTUAL OVERVIEW
+## Contextual overview
 
-## ARCHITECTURE DIAGRAM
+## Architecture diagram
 
-## PROJECT OBJECTIVES
+## Project objectives
 
-## REPRODUCIBILITY GUIDELINES
+## Reproducibility guidelines
