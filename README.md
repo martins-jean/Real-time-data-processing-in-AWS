@@ -2,7 +2,9 @@
 
 ## Contextual overview
 
+<p align="justify">
 The administration of a city would like to improve the efficiency of its wind farms and anticipate possible defects in wind turbines due to excessively high wind speeds. They would like to know when wind speeds get severe so that they can quickly alert maintenance teams and dispatch them where needed. 
+</p>
 
 ## Architecture diagram
 
