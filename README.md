@@ -13,11 +13,44 @@ The administration of a city would like to improve the efficiency of its wind fa
 ## Project objectives
 
 <p align="justify">
-1. To collect and process streaming data, we will use Amazon Kinesis Data Streams. <br> <br>
-2. To analyze the data from the data stream, we will use Amazon Kinesis Data Analytics for Apache Flink. We can author and run an Apache Flink application against streaming sources to detect higher than normal wind speeds. <br> <br>
-3. To store the output data, we can configure an external destination. We can use a Lambda function to send the data to an Amazon DynamoDB table, which is an ideal service for scenarios where low latency is required. <br> <br>
-4. To alert the maintenance team when an anomaly occurs, we can create a second Lambda function to scan and filter the DynamoDB table for anomaly records, and then publish a notification to an Amazon SNS topic and get real-time alerts when there is a need for maintenance. <br> <br>
-5. Create a new Kinesis Data Analytics streaming application to calculate the wind speed maximum for one of the wind farms.
+1. To collect and process large streams of wind speed sensor data in real-time, we will use Kinesis Data Streams. <br> <br>
+2. To analyze the data, we will use Kinesis Data Analytics for Apache Flink. <br> <br>
+3. To perform anomaly detection, we will use the Random Cut Forest (RCF) algorithm. The process will assign an anomaly score to each record based on values in the numeric columns. A record is an anomaly if it is distant from other records. <br> <br>
+4. To configure an external destination, we will use a Lambda function. The function code will then take the processed data and parse it into records in an Amazon DynamoDB table. The data includes the wind farm location, wind speed and the assigned anomaly score. <br> <br>
+5. To scan the DynamoDB table and filter for anomaly scores greater or equal to 2, we will use a second Lambda function. For each discovered anomaly, the function publishes a notification message to an SNS topic. <br> <br>
+6. Subscribers to the SNS topic receive a notification email each time an anomaly is identified so the maintenance can be alerted and dispatched as soon as possible to the affected wind farm. <br> <br>
+7. To further our analysis, we will create a new Kinesis Data Analytics application which will calculate the wind speed maximum for one of the wind farms.
 </p>
 
 ## Reproducibility guidelines
+
+<details>
+  <summary>
+    
+  </summary>
+  
+</details>
+
+<details>
+  <summary>
+    
+  </summary>
+</details>
+
+<details>
+  <summary>
+    
+  </summary>
+</details>
+
+<details>
+  <summary>
+    
+  </summary>
+</details>
+
+<details>
+  <summary>
+    
+  </summary>
+</details>
