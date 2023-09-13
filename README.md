@@ -28,7 +28,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   <summary>
     Required setup
   </summary>
-  1. Create a bucket in S3 for the Apache Flink application and upload the two .jar files to it.
+  1. Create a bucket in S3 for the Apache Flink application and use GitHub Desktop to upload the two .jar files to it.
 </details>
 
 <details>
