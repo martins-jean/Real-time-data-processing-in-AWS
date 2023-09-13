@@ -28,7 +28,7 @@ The administration of a city would like to improve the efficiency of its wind fa
     Required setup
   </summary>
   1. Create a bucket in S3 for the Apache Flink application and use GitHub Desktop to upload the AnomalyDetection.jar file to it. <br>
-  2. Create an EC2 instance called "Wind Turbine Simulator". <br>
+  2. Create an EC2 instance called "Wind Turbine Simulator" with a boto3 script that generates wind speed data. <br>
   3. Create an IAM role for Kinesis Data Analytics.
 </details>
 
@@ -75,6 +75,9 @@ The administration of a city would like to improve the efficiency of its wind fa
   * Value: us-east-1. <br>
   - Click run to start the application with the latest snapshot. <br> <br>
 3. Return to the Wind Turbine Data Simulator and under "Wind Speed Data Set" click start and review to ensure data is being generated. <br>
+4. Click on the AnomalyDetectionStream on the Kinesis page. <br>
+5. Under data viewer, choose the only shard available, the latest starting position, get records and then next records to review the data. <br>
+6. Start the "Wind Speed Anomaly Data Set"
 </details>
 
 <details>
