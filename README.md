@@ -33,7 +33,7 @@ The administration of a city would like to improve the efficiency of its wind fa
 
 <details>
   <summary>
-    
+    Deploy a Kinesis Data Stream to ingest streaming data from the wind speed sensors
   </summary>
 </details>
 
