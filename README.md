@@ -65,11 +65,11 @@ The administration of a city would like to improve the efficiency of its wind fa
   - Under Runtime properties: click add item: <br> <br>
   * Group ID: project. <br>
   * Key: inputStreamName. <br>
-  * Value: WindDataStream. <br>
+  * Value: WindDataStream. <br> <br>
   - Add another item: <br>
   * Group ID: project. <br>
   * Key: ouputStreamName. <br>
-  * Value: AnomalyDetectionStream. <br>
+  * Value: AnomalyDetectionStream. <br> <br>
   - Add another item: <br>
   * Group ID: project. <br>
   * Key: region. <br>
