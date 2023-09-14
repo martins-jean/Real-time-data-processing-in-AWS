@@ -30,6 +30,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   1. Create a bucket in S3 for the Apache Flink application and use GitHub Desktop to upload the AnomalyDetection.jar file to it. <br>
   2. Create an EC2 instance called "Wind Turbine Simulator" with a boto3 script that generates wind speed data. <br>
   3. Create an IAM role for Kinesis Data Analytics.
+  4. Create several AWS Lambda functions using the boto3 scripts I provided 
 </details>
 
 <details>
@@ -77,13 +78,14 @@ The administration of a city would like to improve the efficiency of its wind fa
 3. Return to the Wind Turbine Data Simulator and under "Wind Speed Data Set" click start and review to ensure data is being generated. <br>
 4. Click on the AnomalyDetectionStream on the Kinesis page. <br>
 5. Under data viewer, choose the only shard available, the latest starting position, get records and then next records to review the data. <br>
-6. Start the "Wind Speed Anomaly Data Set" and review to ensure the simulator is producing wind data.
+6. Start the "Wind Speed Anomaly Data Set" and review it to ensure the simulator is producing anomaly data.
 </details>
 
 <details>
   <summary>
     Use a Lambda function to write application output data to a DynamoDB table
   </summary>
+1. Go to the AWS Lambda console and click on the AnalyticsDestinationFunction.
 </details>
 
 <details>
