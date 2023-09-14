@@ -58,24 +58,28 @@ The administration of a city would like to improve the efficiency of its wind fa
 - Service role: choose the IAM role you created earlier. <br>
 - Templates: Development. <br>
 
-2. At the top of the application page, click configure: <br> 
-- Amazon S3 bucket: click Browse and choose the kinesis-flink bucket you created earlier. <br>
-- Path to S3 object: AnomalyDetection.jar. <br>
-- Access to application resources: Choose from IAM roles that Kinesis Data Analytics can assume. <br>
-- Service role: choose the IAM role you created earlier. <br>
-- Under Runtime properties: click add item: <br> 
-- Group ID: project. <br>
-- Key: inputStreamName. <br>
-- Value: WindDataStream. <br>
-- Add another item: <br> 
-- Group ID: project. <br>
-- Key: ouputStreamName. <br>
-- Value: AnomalyDetectionStream. <br>
-- Add another item: <br>
-- Group ID: project. <br>
-- Key: region. <br>
-- Value: us-east-1. <br>
-- Click run to start the application with the latest snapshot. <br>
+At the top of the application page, click configure: <br> <br>
+
+  - Amazon S3 bucket: click Browse and choose the kinesis-flink bucket you created earlier. <br>
+  - Path to S3 object: AnomalyDetection.jar. <br>
+  - Access to application resources: Choose from IAM roles that Kinesis Data Analytics can assume. <br>
+  - Service role: choose the IAM role you created earlier. <br>
+  - Under Runtime properties: click add item: <br>
+    - Group ID: project. <br>
+    - Key: inputStreamName. <br>
+    - Value: WindDataStream. <br> <br>
+    
+  - Add another item: <br>
+    - Group ID: project. <br>
+    - Key: ouputStreamName. <br>
+  - Value: AnomalyDetectionStream. <br> <br>
+  
+  - Add another item: <br>
+    - Group ID: project. <br>
+    - Key: region. <br>
+    - Value: us-east-1. <br> <br>
+    
+  - Click run to start the application with the latest snapshot. <br>
 3. Return to the Wind Turbine Data Simulator and under "Wind Speed Data Set" click start and review to ensure data is being generated. <br>
 4. Click on the AnomalyDetectionStream on the Kinesis page. <br>
 5. Under data viewer, choose the only shard available, the latest starting position, get records and then next records to review the data. <br>
@@ -87,10 +91,11 @@ The administration of a city would like to improve the efficiency of its wind fa
     Use a Lambda function to write application output data to a DynamoDB table
   </summary>
 1. Go to the AWS Lambda console and click on the AnalyticsDestinationFunction. The function accepts the wind data from analytics application destination stream in JSON format and parses it to store it in a DynamoDB table. <br>
-2. In the function overview section, click add trigger: <br>
-- Choose kinesis. <br>
-- Select the AnomalyDetectionStream in the drop-down menu. <br>
-- Review that "Activate trigger" is checked and click add. <br>
+2. In the function overview section, click add trigger: <br> <br>
+  
+  - Choose kinesis. <br>
+  - Select the AnomalyDetectionStream in the drop-down menu. <br>
+  - Review that "Activate trigger" is checked and click add. <br>
 
   
 </details>
