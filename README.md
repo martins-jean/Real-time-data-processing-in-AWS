@@ -97,13 +97,13 @@ The administration of a city would like to improve the efficiency of its wind fa
   </summary>
   
 1. Go to the AWS Lambda console and click on the AnalyticsDestinationFunction. The function accepts the wind data from analytics application destination stream in JSON format and parses it to store it in a DynamoDB table. <br>
-2. In the function overview section, click add trigger: <br> <br>
+2. In the function overview section, click add trigger: <br>
   
   - Choose kinesis. <br>
   - Select the AnomalyDetectionStream in the drop-down menu. <br>
   - Review that "Activate trigger" is checked and click add. <br>
 
-  
+3. Navigate to the DynamoDb console and under tables, choose the WindDataTable.
 </details>
 
 <details>
