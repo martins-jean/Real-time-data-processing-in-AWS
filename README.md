@@ -117,6 +117,6 @@ The administration of a city would like to improve the efficiency of its wind fa
   
   - Protocol: email. <br>
   - Endpoint: type a valid email address you can access. You will receive an email to confirm the subscription. <br>
-
+  
 3. Navigate to the Lambda console and click on the AnomalyMessageDeliveryFunction. <br>
 </details>
