@@ -61,7 +61,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   - Amazon S3 bucket: click Browse and choose the kinesis-flink bucket you created earlier. <br>
   - Path to S3 object: AnomalyDetection.jar. <br>
   - Access to application resources: Choose from IAM roles that Kinesis Data Analytics can assume. <br>
-  - Service role: choose the IAM role you created earlier. <br>
+  - Service role: choose the IAM role you created earlier. <br> <br>
   - Under Runtime properties: click add item: <br> <br>
   * Group ID: project. <br>
   * Key: inputStreamName. <br>
