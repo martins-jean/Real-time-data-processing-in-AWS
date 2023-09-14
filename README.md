@@ -112,9 +112,8 @@ The administration of a city would like to improve the efficiency of its wind fa
   <summary>
     Use another Lambda function to filter the DynamoDB table for anomalies and publish them to an SNS topic
   </summary>
-<br> <br>
-1. Navigate to the SNS console and under topics, click on AnomalyNotification. <br>
-2. Scroll to the subscriptions tab and create a subscription: <br>
+  Navigate to the SNS console and under topics, click on AnomalyNotification. <br>
+  Scroll to the subscriptions tab and create a subscription: <br>
   
   - Protocol: email. <br>
   - Endpoint: type a valid email address you can access. You will receive an email to confirm the subscription. <br>
