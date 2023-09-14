@@ -50,7 +50,6 @@ The administration of a city would like to improve the efficiency of its wind fa
 7. Return to the data stream page and click on the data viewer option. <br>
 8. Choose the only available shard, latest starting position and click get records. To view incoming data, click next records. If you don't see any records, wait for a few seconds and try again. <br>
 9. Create another provisioned Data Stream named "AnomalyDetectionStream".
-
 </details>
 
 <details>
@@ -89,7 +88,6 @@ The administration of a city would like to improve the efficiency of its wind fa
 4. Click on the AnomalyDetectionStream on the Kinesis page. <br>
 5. Under data viewer, choose the only shard available, the latest starting position, get records and then next records to review the data. <br>
 6. Start the "Wind Speed Anomaly Data Set" and review it to ensure the simulator is producing anomaly data.
-   
 </details>
 
 <details>
@@ -107,10 +105,13 @@ The administration of a city would like to improve the efficiency of its wind fa
 3. Navigate to the DynamoDB console and under tables, choose the WindDataTable and click explore table items. <br>
 4. In the items returned section, click the expand option. <br>
 5. In the information alert, click on retrieve next page. <br>
+6. Click on the anomaly score column and you will see it in descending order. Review to ensure that three anomalies are listed at the top. <br>
+
 </details>
 
 <details>
   <summary>
     Use another Lambda function to filter the DynamoDB table for anomalies and publish them to an SNS topic
   </summary>
+1. 
 </details>
