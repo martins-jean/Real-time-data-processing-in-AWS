@@ -57,8 +57,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   - Access to application resources: Choose from IAM roles that Kinesis Data Analytics can assume. <br>
   - Service role: choose the IAM role you created earlier. <br>
   - Templates: Development. <br>
-	
-<p align="left>	
+
 2. At the top of the application page, click configure: <br> <br>
 
   - Amazon S3 bucket: click Browse and choose the kinesis-flink bucket you created earlier. <br>
@@ -85,7 +84,6 @@ The administration of a city would like to improve the efficiency of its wind fa
 4. Click on the AnomalyDetectionStream on the Kinesis page. <br>
 5. Under data viewer, choose the only shard available, the latest starting position, get records and then next records to review the data. <br>
 6. Start the "Wind Speed Anomaly Data Set" and review it to ensure the simulator is producing anomaly data.
-</p>
 </details>
 
 <details>
