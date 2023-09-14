@@ -56,7 +56,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   - Name: AnomalyDetection. <br>
   - Access to application resources: Choose from IAM roles that Kinesis Data Analytics can assume. <br>
   - Service role: choose the IAM role you created earlier. <br>
-  - Templates: Development. <br> <br>
+  - Templates: Development. <br>
     
 2. At the top of the application page, click configure: <br>
   - Amazon S3 bucket: click Browse and choose the kinesis-flink bucket you created earlier. <br>
