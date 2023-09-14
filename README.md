@@ -85,7 +85,11 @@ The administration of a city would like to improve the efficiency of its wind fa
   <summary>
     Use a Lambda function to write application output data to a DynamoDB table
   </summary>
-1. Go to the AWS Lambda console and click on the AnalyticsDestinationFunction.
+1. Go to the AWS Lambda console and click on the AnalyticsDestinationFunction. <br>
+2. In the function overview section, click add trigger: <br> <br>
+
+  - Choose kinesis. <br>
+  -
 </details>
 
 <details>
