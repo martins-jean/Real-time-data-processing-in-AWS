@@ -81,18 +81,18 @@ The administration of a city would like to improve the efficiency of its wind fa
     - Value: us-east-1. <br> <br>
     
   - Click run to start the application with the latest snapshot. <br> 
-3. Return to the Wind Turbine Data Simulator and under "Wind Speed Data Set" click start and review to ensure data is being generated. <br>
-4. Click on the AnomalyDetectionStream on the Kinesis page. <br>
-5. Under data viewer, choose the only shard available, the latest starting position, get records and then next records to review the data. <br>
-6. Start the "Wind Speed Anomaly Data Set" and review it to ensure the simulator is producing anomaly data.
+  3. Return to the Wind Turbine Data Simulator and under "Wind Speed Data Set" click start and review to ensure data is being generated. <br>
+  4. Click on the AnomalyDetectionStream on the Kinesis page. <br>
+  5. Under data viewer, choose the only shard available, the latest starting position, get records and then next records to review the data. <br>
+  6. Start the "Wind Speed Anomaly Data Set" and review it to ensure the simulator is producing anomaly data.
 </details>
 
 <details>
   <summary>
     Use a Lambda function to write application output data to a DynamoDB table
   </summary>
-1. Go to the AWS Lambda console and click on the AnalyticsDestinationFunction. The function accepts the wind data from analytics application destination stream in JSON format and parses it to store it in a DynamoDB table. <br>
-2. In the function overview section, click add trigger: <br> <br>
+  1. Go to the AWS Lambda console and click on the AnalyticsDestinationFunction. The function accepts the wind data from analytics application destination stream in JSON format and parses it to store it in a DynamoDB table. <br>
+  2. In the function overview section, click add trigger: <br> <br>
   
   - Choose kinesis. <br>
   - Select the AnomalyDetectionStream in the drop-down menu. <br>
