@@ -32,6 +32,7 @@ The administration of a city would like to improve the efficiency of its wind fa
 2. Create an EC2 instance called "Wind Turbine Simulator" with a boto3 script that generates wind speed data. <br>
 3. Create an IAM role for Kinesis Data Analytics.
 4. Create several AWS Lambda functions using the boto3 scripts I provided.
+5. Create a table in DynamoDB named WindDataTable 
 
 </details>
 
@@ -103,7 +104,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   - Select the AnomalyDetectionStream in the drop-down menu. <br>
   - Review that "Activate trigger" is checked and click add. <br>
 
-3. Navigate to the DynamoDb console and under tables, choose the WindDataTable.
+3. Navigate to the DynamoDB console and under tables, choose the WindDataTable.
 </details>
 
 <details>
