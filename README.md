@@ -104,7 +104,9 @@ The administration of a city would like to improve the efficiency of its wind fa
   - Select the AnomalyDetectionStream in the drop-down menu. <br>
   - Review that "Activate trigger" is checked and click add. <br>
 
-3. Navigate to the DynamoDB console and under tables, choose the WindDataTable.
+3. Navigate to the DynamoDB console and under tables, choose the WindDataTable and click explore table items. <br>
+4. In the items returned section, click the expand option. <br>
+5. In the information alert, click on retrieve next page. <br>
 </details>
 
 <details>
