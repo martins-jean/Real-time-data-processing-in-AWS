@@ -62,7 +62,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   - Path to S3 object: AnomalyDetection.jar. <br>
   - Access to application resources: Choose from IAM roles that Kinesis Data Analytics can assume. <br>
   - Service role: choose the IAM role you created earlier. <br>
-  - Under Runtime properties: click add item: <br>
+  - Under Runtime properties: click add item: <br> <br>
   * Group ID: project. <br>
   * Key: inputStreamName. <br>
   * Value: WindDataStream. <br>
@@ -73,8 +73,8 @@ The administration of a city would like to improve the efficiency of its wind fa
   - Add another item: <br>
   * Group ID: project. <br>
   * Key: region. <br>
-  * Value: us-east-1. <br>
-  - Click run to start the application with the latest snapshot. <br> <br>
+  * Value: us-east-1. <br> <br>
+  - Click run to start the application with the latest snapshot. <br> 
 3. Return to the Wind Turbine Data Simulator and under "Wind Speed Data Set" click start and review to ensure data is being generated. <br>
 4. Click on the AnomalyDetectionStream on the Kinesis page. <br>
 5. Under data viewer, choose the only shard available, the latest starting position, get records and then next records to review the data. <br>
