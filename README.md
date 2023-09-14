@@ -89,7 +89,8 @@ The administration of a city would like to improve the efficiency of its wind fa
 2. In the function overview section, click add trigger: <br> <br>
 
   - Choose kinesis. <br>
-  -
+  - Select the AnomalyDetectionStream in the drop-down menu. <br>
+  - Review that "Activate trigger" is checked and click add. <br>
 </details>
 
 <details>
