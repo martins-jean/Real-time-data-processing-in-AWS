@@ -59,7 +59,7 @@ The administration of a city would like to improve the efficiency of its wind fa
   - Service role: choose the IAM role you created earlier. <br>
   - Templates: Development. <br>
   
-2. At the top of the application page, click configure: <br> <br>
+,-2. At the top of the application page, click configure: <br> <br>
 
   - Amazon S3 bucket: click Browse and choose the kinesis-flink bucket you created earlier. <br>
     - Path to S3 object: AnomalyDetection.jar. <br>
