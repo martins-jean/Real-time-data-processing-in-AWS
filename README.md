@@ -52,35 +52,29 @@ The administration of a city would like to improve the efficiency of its wind fa
   <summary>
     Create a Kinesis Data Analytics for Apache Flink application to process the incoming data
   </summary>
-  1. On the Kinesis console, click Managed Apache Flink and then create a streaming application: <br> <br>
+  1. On the Kinesis console, click Managed Apache Flink and then create a streaming application: <br>
   - Name: AnomalyDetection. <br>
   - Access to application resources: Choose from IAM roles that Kinesis Data Analytics can assume. <br>
   - Service role: choose the IAM role you created earlier. <br>
   - Templates: Development. <br> <br>
     
-2. At the top of the application page, click configure: <br> <br>
+2. At the top of the application page, click configure: <br>
   - Amazon S3 bucket: click Browse and choose the kinesis-flink bucket you created earlier. <br>
   - Path to S3 object: AnomalyDetection.jar. <br>
   - Access to application resources: Choose from IAM roles that Kinesis Data Analytics can assume. <br>
-  - Service role: choose the IAM role you created earlier. <br> <br>
+  - Service role: choose the IAM role you created earlier. <br>
   - Under Runtime properties: click add item: <br> 
-  
     - Group ID: project. <br>
     - Key: inputStreamName. <br>
     - Value: WindDataStream. <br> <br>
-    
   - Add another item: <br> 
-  
     - Group ID: project. <br>
     - Key: ouputStreamName. <br>
-    - Value: AnomalyDetectionStream. <br> <br>
-    
+    - Value: AnomalyDetectionStream. <br>
   - Add another item: <br>
-  
     - Group ID: project. <br>
     - Key: region. <br>
-    - Value: us-east-1. <br> <br>
-    
+    - Value: us-east-1. <br>
   - Click run to start the application with the latest snapshot. <br> 
 3. Return to the Wind Turbine Data Simulator and under "Wind Speed Data Set" click start and review to ensure data is being generated. <br>
 4. Click on the AnomalyDetectionStream on the Kinesis page. <br>
