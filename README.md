@@ -119,5 +119,11 @@ The administration of a city would like to improve the efficiency of its wind fa
   - Protocol: email. <br>
   - Endpoint: type a valid email address you can access. You will receive an email to confirm the subscription. <br>
   
-3. Navigate to the Lambda console and click on the AnomalyMessageDeliveryFunction. This function runs a scan on the WindDataTable and filters the results according to the anomaly score. If the score is higher or equal to 2, it adds the location and wind speed for that item to an SNS message and publishes it to the AnomalyNotification SNS topic. 
+3. Navigate to the Lambda console and click on the AnomalyMessageDeliveryFunction. This function runs a scan on the WindDataTable and filters the results according to the anomaly score. If the score is higher or equal to 2, it adds the location and wind speed for that item to an SNS message and publishes it to the AnomalyNotification SNS topic. <br>
+4. To create a test event on the source code page, click Test:
+
+  - Event name: AnomalyNotification. <br>
+  
+5. Click save, review the successful alert and click test again to see the results. <br>
+6. Go to the email you listed and verify that you received three notifications.
 </details>
