@@ -52,15 +52,13 @@ The administration of a city would like to improve the efficiency of its wind fa
   <summary>
     Create a Kinesis Data Analytics for Apache Flink application to process the incoming data
   </summary>
-  1. On the Kinesis console, click Managed Apache Flink and then create a streaming application: <br>
-  
+  1. On the Kinesis console, click Managed Apache Flink and then create a streaming application: <br> <br>
   - Name: AnomalyDetection. <br>
   - Access to application resources: Choose from IAM roles that Kinesis Data Analytics can assume. <br>
   - Service role: choose the IAM role you created earlier. <br>
   - Templates: Development. <br> <br>
     
 2. At the top of the application page, click configure: <br> <br>
-
   - Amazon S3 bucket: click Browse and choose the kinesis-flink bucket you created earlier. <br>
   - Path to S3 object: AnomalyDetection.jar. <br>
   - Access to application resources: Choose from IAM roles that Kinesis Data Analytics can assume. <br>
