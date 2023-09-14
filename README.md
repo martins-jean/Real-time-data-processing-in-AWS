@@ -30,10 +30,10 @@ The administration of a city would like to improve the efficiency of its wind fa
   
 1. Create a bucket in S3 for the Apache Flink application and use GitHub Desktop to upload the AnomalyDetection.jar file to it. <br>
 2. Create an EC2 instance called "Wind Turbine Simulator" with a boto3 script that generates wind speed data. <br>
-3. Create an IAM role for Kinesis Data Analytics.
-4. Create several AWS Lambda functions using the boto3 scripts I provided.
-5. Create a table in DynamoDB named WindDataTable 
-
+3. Create an IAM role for Kinesis Data Analytics. <br>
+4. Create several AWS Lambda functions using the boto3 scripts I provided. <br>
+5. Create a table in DynamoDB named WindDataTable. <br>
+6. Create an AnomalyNotification topic in the SNS console.
 </details>
 
 <details>
@@ -106,12 +106,17 @@ The administration of a city would like to improve the efficiency of its wind fa
 4. In the items returned section, click the expand option. <br>
 5. In the information alert, click on retrieve next page. <br>
 6. Click on the anomaly score column and you will see it in descending order. Review to ensure that three anomalies are listed at the top. <br>
-
 </details>
 
 <details>
   <summary>
     Use another Lambda function to filter the DynamoDB table for anomalies and publish them to an SNS topic
   </summary>
-1. 
+1. Navigate to the SNS console and under topics, click on AnomalyNotification. <br>
+2. Scroll to the subscriptions tab and create a subscription:
+
+  - Protocol: email. <br>
+  - Endpoint: type a valid email address you can access. You will receive an email to confirm the subscription. <br>
+
+3. Navigate to the Lambda console and click on the AnomalyMessageDeliveryFunction. <br>
 </details>
