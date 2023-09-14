@@ -39,12 +39,12 @@ The administration of a city would like to improve the efficiency of its wind fa
   1. Navigate to S3 and inside your kinesis-flink bucket, copy the name of the anomaly detection .jar file and paste it in a text editor. <br>
   2. Navigate to the Amazon EC2 dashboard and click on instances (running) and copy the public IPv4 address of the EC2 instance you created earlier. <br>
   3. In a new browser tab, paste the address and add /kinesis to it at the end. This opens the wind turbine data simulator. <br>
-  4. Navigate to Amazon Kinesis and create a provisioned Data Stream. <br>
+  4. Navigate to Amazon Kinesis and create a provisioned Data Stream named "WindDataStream". <br>
   5. Return to the Wind Turbine Data Simulator, type the name of your data stream and start sending the data. <br>
   6. In the test data section, review that the data is being generated. <br>
   7. Return to the data stream page and click on the data viewer option. <br>
   8. Choose the only available shard, latest starting position and click get records. To view incoming data, click next records. If you don't see any records, wait for a few seconds and try again. <br>
-  9. Create another provisioned Data Stream named AnomalyDetectionStream. 
+  9. Create another provisioned Data Stream named "AnomalyDetectionStream". 
 </details>
 
 <details>
