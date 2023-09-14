@@ -7,7 +7,7 @@ import base64
 import json
 
 dynamodb = boto3.client('dynamodb')
-output_table = os.environ.get('WindDataTable')
+output_table = os.environ.get('OUTPUT_TABLE_NAME')
 
 
 def handler(event, context):
